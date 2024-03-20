@@ -10,7 +10,7 @@ class BooksType(DjangoObjectType):
     class Meta:
 
         model = Books
-        fields = ("id", "title", "excerpt")
+        fields = ("id", "title", "excerpt") # '__all__' for all cols
 
 
 class Query(graphene.ObjectType):
